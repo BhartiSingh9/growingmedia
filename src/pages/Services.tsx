@@ -122,6 +122,7 @@ export default function ServicesPage() {
 
               return (
                 <div
+                  id={service.id}
                   key={service.id}
                   className={`grid lg:grid-cols-2 gap-12 items-center py-12 ${index !== services.length - 1 ? "border-b border-gray-200" : ""
                     }`}

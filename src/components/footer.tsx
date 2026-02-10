@@ -100,10 +100,10 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">© {currentYear} The Growing Media Solutions. All rights reserved.</p>
           <div className="flex gap-6 text-sm text-gray-400 mt-4 sm:mt-0">
-            <Link to="#" className="hover:text-blue-400">
+            <Link to="/privacy" className="hover:text-blue-400">
               Privacy
             </Link>
-            <Link to="#" className="hover:text-blue-400">
+            <Link to="/terms" className="hover:text-blue-400">
               Terms
             </Link>
           </div>

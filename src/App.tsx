@@ -8,6 +8,8 @@ import Services from './pages/Services'
 import Portfolio from './pages/Portfolio'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms'
 
 export default function App() {
     return (
@@ -22,6 +24,8 @@ export default function App() {
                     <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/careers" element={<Careers />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/privacy" element={<Privacy />} />
+                    <Route path="/terms" element={<Terms />} />
                 </Routes>
             </main>
             <Footer />
