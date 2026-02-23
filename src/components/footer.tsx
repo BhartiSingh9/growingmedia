@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Mail, LinkedIn } from 'lucide-react'
+import { Mail, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -86,7 +86,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-3 pt-2">
                 <a href="https://www.linkedin.com/company/the-growing-media-solutions/" className="hover:text-green-400 transition">
-                  <LinkedIn size={18} />
+                  <Linkedin size={18} />
                 </a>
               </li>
             </ul>
