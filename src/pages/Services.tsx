@@ -91,7 +91,7 @@ export default function ServicesPage() {
     },
     {
       id: "personal-branding",
-      image: "/personal-branding-hero.jpeg",
+      image: "/personal-branding.jpeg",
       icon: Users,
       title: "Personal Branding",
       subtitle: "Transform Your Authority",
