@@ -30,6 +30,11 @@ export default function Home() {
             title: 'Social Media Marketing',
             description: 'Engaging content and strategies that build communities and drive engagement.',
         },
+        {
+            image: '/personal-branding.jpeg',
+            title: 'Personal Branding',
+            description: 'Transform your social presence into a powerful personal brand that builds authority and drives growth.',
+        },
     ]
 
     return (
