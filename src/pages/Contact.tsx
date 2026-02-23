@@ -82,8 +82,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Email</h3>
-                    <a href="mailto:business@thgrowingmedia.com" className="text-blue-600 hover:text-blue-700">
-                     business@thgrowingmedia.com
+                    <a href="mailto:business@thegrowingmedia.com" className="text-blue-600 hover:text-blue-700">
+                     business@thegrowingmedia.com
                     </a>
                   </div>
                 </div>
