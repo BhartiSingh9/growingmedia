@@ -175,7 +175,7 @@ export default function ContactPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
-                      placeholder="+91 9876 543 210"
+                      placeholder="+91 7043682628"
                     />
                   </div>
                 </div>
@@ -196,6 +196,7 @@ export default function ContactPage() {
                     <option value="web-dev">Website Development</option>
                     <option value="seo">SEO Optimization</option>
                     <option value="social">Social Media Marketing</option>
+                    <option value="personal-branding">Personal Branding</option>
                     <option value="multiple">Multiple Services</option>
                   </select>
                 </div>
