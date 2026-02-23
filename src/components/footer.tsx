@@ -39,6 +39,11 @@ export default function Footer() {
                   Social Media
                 </Link>
               </li>
+              <li>
+                <Link to="/services#personal-branding" className="hover:text-green-400 transition">
+                  Personal Branding
+                </Link>
+              </li>
             </ul>
           </div>
 
