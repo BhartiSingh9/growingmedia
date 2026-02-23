@@ -33,12 +33,11 @@ export default function Navigation() {
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative w-auto h-12">
               <img
-                src="/logo-tgms.jpeg"
+                src="/logo-tgms.png"
                 alt="The Growing Media Solutions Logo"
                 className="h-12 w-auto object-contain"
               />
             </div>
-            <span className="font-bold text-lg hidden sm:inline text-gray-900">The Growing Media Solutions</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -47,7 +46,7 @@ export default function Navigation() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 underline-animate cursor-pointer bg-transparent border-none"
+                className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-green-600 underline-animate cursor-pointer bg-transparent border-none"
               >
                 {item.label}
               </button>
@@ -73,7 +72,7 @@ export default function Navigation() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded cursor-pointer bg-transparent border-none"
+                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded cursor-pointer bg-transparent border-none"
               >
                 {item.label}
               </button>

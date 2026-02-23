@@ -24,7 +24,7 @@ export default function TermsPage() {
             {/* Content */}
             <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="prose prose-lg max-w-none">
+                    <div className="space-y-12">
 
                         {/* Introduction */}
                         <div className="mb-12">
@@ -55,7 +55,7 @@ export default function TermsPage() {
                             <p className="text-gray-700 mb-4">
                                 The Growing Media Solutions provides digital marketing services, including but not limited to:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li>Website development and design</li>
                                 <li>Search engine optimization (SEO)</li>
                                 <li>Social media marketing and management</li>
@@ -76,7 +76,7 @@ export default function TermsPage() {
                             <p className="text-gray-700 mb-4">
                                 When creating an account or engaging our services, you agree to:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li>Provide accurate, current, and complete information</li>
                                 <li>Maintain the security of your account credentials</li>
                                 <li>Notify us immediately of any unauthorized use of your account</li>
@@ -87,7 +87,7 @@ export default function TermsPage() {
                             <p className="text-gray-700 mb-4">
                                 You agree not to:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li>Use our services for any illegal or unauthorized purpose</li>
                                 <li>Violate any applicable laws, regulations, or third-party rights</li>
                                 <li>Transmit viruses, malware, or other harmful code</li>
@@ -125,7 +125,7 @@ export default function TermsPage() {
                             <p className="text-gray-700 mb-4">
                                 Payment terms will be specified in individual service agreements or proposals. General payment terms include:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li>Invoices are due within the timeframe specified in your agreement</li>
                                 <li>Late payments may incur additional fees or interest charges</li>
                                 <li>We reserve the right to suspend services for non-payment</li>
@@ -153,7 +153,7 @@ export default function TermsPage() {
                             <p className="text-gray-700 mb-4">
                                 To the maximum extent permitted by law:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li>Our services are provided "as is" without warranties of any kind, either express or implied</li>
                                 <li>We do not guarantee specific results or outcomes from our services</li>
                                 <li>We are not liable for any indirect, incidental, special, consequential, or punitive damages</li>
@@ -178,7 +178,7 @@ export default function TermsPage() {
                             <p className="text-gray-700 mb-4">
                                 Either party may terminate services under the following conditions:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li>With written notice as specified in the service agreement</li>
                                 <li>Immediately for material breach of these Terms</li>
                                 <li>Immediately if required by law or regulatory authority</li>
@@ -234,7 +234,7 @@ export default function TermsPage() {
                                 If you have any questions or concerns about these Terms of Service, please contact us:
                             </p>
                             <div className="space-y-2 text-gray-700">
-                                <p><strong>Email:</strong> <a href="mailto:hello@growingmedia.com" className="text-blue-600 hover:text-blue-800">hello@growingmedia.com</a></p>
+                                <p><strong>Email:</strong> <a href="mailto:business@thgrowingmedia.com" className="text-blue-600 hover:text-blue-800">business@thgrowingmedia.com</a></p>
                                 <p><strong>Company:</strong> The Growing Media Solutions</p>
                             </div>
                         </div>

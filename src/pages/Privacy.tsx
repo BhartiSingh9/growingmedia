@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             {/* Content */}
             <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="prose prose-lg max-w-none">
+                    <div className="space-y-12">
 
                         {/* Introduction */}
                         <div className="mb-12">
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
                             <p className="text-gray-700 mb-4">
                                 We may collect personal information that you voluntarily provide to us when you:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li>Fill out contact forms or request consultations</li>
                                 <li>Subscribe to our newsletter or marketing communications</li>
                                 <li>Create an account or register for our services</li>
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
                             <p className="text-gray-700 mb-4">
                                 When you visit our website, we automatically collect certain information about your device and browsing activity, including:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li>IP address and browser type</li>
                                 <li>Operating system and device information</li>
                                 <li>Pages visited and time spent on our site</li>
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
                             <p className="text-gray-700 mb-4">
                                 We use the information we collect for various purposes, including:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li>Providing, maintaining, and improving our services</li>
                                 <li>Responding to your inquiries and customer service requests</li>
                                 <li>Sending you marketing communications and promotional materials (with your consent)</li>
@@ -99,7 +99,7 @@ export default function PrivacyPage() {
                             <p className="text-gray-700 mb-4">
                                 We do not sell, rent, or trade your personal information to third parties. We may share your information only in the following circumstances:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li><strong>Service Providers:</strong> We may share information with trusted third-party service providers who assist us in operating our website, conducting our business, or servicing you (e.g., email service providers, analytics platforms, hosting services).</li>
                                 <li><strong>Legal Requirements:</strong> We may disclose your information if required by law, court order, or governmental regulation, or to protect our rights, property, or safety.</li>
                                 <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred to the acquiring entity.</li>
@@ -121,7 +121,7 @@ export default function PrivacyPage() {
                             <p className="text-gray-700 mb-4">
                                 Depending on your location, you may have certain rights regarding your personal information, including:
                             </p>
-                            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <ul className="ml-6 space-y-2 text-gray-700" style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
                                 <li><strong>Access:</strong> Request access to the personal information we hold about you</li>
                                 <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
                                 <li><strong>Deletion:</strong> Request deletion of your personal information</li>
@@ -175,7 +175,7 @@ export default function PrivacyPage() {
                                 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
                             </p>
                             <div className="space-y-2 text-gray-700">
-                                <p><strong>Email:</strong> <a href="mailto:hello@growingmedia.com" className="text-blue-600 hover:text-blue-800">hello@growingmedia.com</a></p>
+                                <p><strong>Email:</strong> <a href="mailto:business@thgrowingmedia.com" className="text-blue-600 hover:text-blue-800">business@thgrowingmedia.com</a></p>
                                 <p><strong>Company:</strong> The Growing Media Solutions</p>
                             </div>
                         </div>
