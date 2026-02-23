@@ -89,6 +89,36 @@ export default function ServicesPage() {
       ],
       color: "from-orange-600 to-red-500",
     },
+    {
+      id: "personal-branding",
+      image: "/personal-branding-hero.jpeg",
+      icon: Users,
+      title: "Personal Branding",
+      subtitle: "Transform Your Authority",
+      description:
+        "We help founders, CEOs, consultants, and professionals transform their social presence into powerful personal brands that build authority and drive growth.",
+      features: [
+        "Brand Strategy & Positioning",
+        "Profile Optimization",
+        "Content Creation & Ghostwriting",
+        "Visual Branding",
+        "Growth Strategy",
+        "Analytics & Reporting",
+      ],
+      whyChoose: [
+        "Strategy-first approach",
+        "Professional ghostwriting",
+        "Strong design support",
+        "Growth-focused execution",
+      ],
+      benefits: [
+        "Build authority",
+        "Increase visibility",
+        "Attract opportunities",
+        "Grow network",
+      ],
+      color: "from-indigo-600 to-purple-500",
+    },
   ]
 
   return (
