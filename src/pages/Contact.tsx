@@ -1,9 +1,7 @@
-""
-
 import type React from "react"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Send, Loader, CheckCircle } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Loader, CheckCircle, AlertCircle } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -15,6 +13,7 @@ export default function ContactPage() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -26,15 +25,40 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError(null)
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          subject: `New Contact from ${formData.name} — ${formData.service}`,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || "Not provided",
+          service: formData.service,
+          message: formData.message,
+        }),
+      })
+
+      const result = await response.json() as { success: boolean; message?: string }
+
+      if (result.success) {
+        setIsSubmitted(true)
+        setFormData({ name: "", email: "", phone: "", service: "", message: "" })
+        setTimeout(() => setIsSubmitted(false), 5000)
+      } else {
+        throw new Error(result.message ?? "Submission failed")
+      }
+    } catch (err) {
+      console.error("Web3Forms error:", err)
+      setError("Failed to send message. Please try again or email us directly at business@thegrowingmedia.com")
+    } finally {
       setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormData({ name: "", email: "", phone: "", service: "", message: "" })
-      setTimeout(() => setIsSubmitted(false), 3000)
-    }, 1500)
+    }
   }
+
 
   return (
     <div className="overflow-hidden">
@@ -241,6 +265,16 @@ export default function ContactPage() {
                     <div>
                       <p className="font-semibold text-green-900">Message sent successfully!</p>
                       <p className="text-sm text-green-800">We'll get back to you within 24 hours.</p>
+                    </div>
+                  </div>
+                )}
+
+                {error && (
+                  <div className="p-4 bg-red-50 border border-red-300 rounded-lg flex items-start gap-3">
+                    <AlertCircle className="text-red-600 flex-shrink-0 mt-0.5" size={20} />
+                    <div>
+                      <p className="font-semibold text-red-900">Sending failed</p>
+                      <p className="text-sm text-red-800">{error}</p>
                     </div>
                   </div>
                 )}
